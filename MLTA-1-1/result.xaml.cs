@@ -21,19 +21,19 @@ namespace MLTA_1_1
         }
         private void Run()
         {
-            PDNF p1 = new PDNF(truthTable);
+            PDNF p1 = new(truthTable);
             string result1 = p1.Run();
             labelPDNF.Content = result1;
             labelPDNF.FontSize = 16;
             labelPDNF.Foreground = Brushes.AliceBlue;
 
-            PCNF p2 = new PCNF(truthTable);
+            PCNF p2 = new(truthTable);
             string result2 = p2.Run();
             labelPCNF.Content = result2;
             labelPCNF.FontSize = 16;
             labelPCNF.Foreground = Brushes.AliceBlue;
 
-            PNF p3 = new PNF(truthTable);
+            PNF p3 = new(truthTable);
             string result3 = p3.Run();
             labelPNF.Content = result3;
             labelPNF.FontSize = 16;
@@ -42,12 +42,7 @@ namespace MLTA_1_1
             result1 = String.Join("",result1.Split(new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', '(', ')', '¬' }));
             result2 = String.Join("", result2.Split(new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', '(', ')', '¬' }));
             result3 = String.Join("", result3.Split(new char[] { '1', ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', '(', ')', '¬' }));
-            //labelLeastCount.Content =
-            //    result1.Length < result2.Length && result1.Length < result3.Length && result1 != "Невозможно построить" ?
-            //    "СДНФ" :
-            //    result2.Length < result3.Length && result2.Length < result1.Length && result2 != "Невозможно построить" ?
-            //    "СКНФ" :
-            //    "ПНФ";
+
             labelLeastCount.Content +=
                 result1.Length <= result2.Length && result1.Length <= result3.Length && result1 != "Невозможно построить" ?
                 "СДНФ " : "";
