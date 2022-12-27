@@ -3,7 +3,7 @@
 ###############################################################################
 * text=auto
 *.xaml                      linguist-detectable=true
-Multicriteria-model.csproj  linguist-detectable=false
+MLTA-1-1.csproj             linguist-detectable=false
 *.xaml                      linguist-language=xml
 
 ###############################################################################
