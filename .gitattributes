@@ -2,9 +2,8 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-*.xaml                      linguist-detectable=true
-MLTA-1-1.csproj             linguist-detectable=false
-*.xaml                      linguist-language=xml
+*.xaml                      linguist-detectable
+Normal_Forms_Builder.csproj linguist-detectable=false
 
 ###############################################################################
 # Set default behavior for command prompt diff.
