@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Controls;
 using System.Windows.Media;
-namespace MLTA_1_1
+namespace Normal_Forms_Builder
 {
     /// <summary>
     /// Выводит результат (СДНФ, СКНФ, ПНФ)
@@ -9,6 +9,7 @@ namespace MLTA_1_1
     public partial class Result : Page
     {
         private readonly bool[] truthTable;
+
         /// <summary>
         /// Выводит результат (СДНФ, СКНФ, ПНФ)
         /// </summary>
@@ -19,6 +20,7 @@ namespace MLTA_1_1
             truthTable = massive;
             Run();
         }
+
         private void Run()
         {
             PDNF p1 = new(truthTable);

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-namespace MLTA_1_1
+namespace Normal_Forms_Builder
 {
     public partial class MainWindow : Window
     {
         private TruthTable trTable;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -15,6 +16,7 @@ namespace MLTA_1_1
             trTable = new TruthTable(Convert.ToInt32((selectedCount.SelectedItem as ComboBoxItem).Content));
             truthTable.Navigate(trTable);
         }
+
         private void Run(object sender, RoutedEventArgs e)
         {
             try

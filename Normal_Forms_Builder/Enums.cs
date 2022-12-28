@@ -1,9 +1,10 @@
-﻿namespace MLTA_1_1
+﻿namespace Normal_Forms_Builder
 {
     /// <summary>
     /// Список символов-действий
     /// </summary>
     enum Symbols { Or = '⋁', And = '⋀', Not = '¬', Xor = '⊕' }
+
     /// <summary>
     /// Список названий переменных
     /// </summary>
